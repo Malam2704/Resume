@@ -1,0 +1,248 @@
+%-------------------------
+% Resume in Latex
+% Author : Mohammed Alam
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+% \usepackage[sfdefault]{times}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Mohammed Alam} \\ \vspace{1pt}
+     \small \href{moeal2144@gmail.com}{\underline{moeal2144@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/moe-alam/}{{https://www.linkedin.com/in/moe-alam}} $|$
+    \href{https://github.com/Malam2704}{\underline{Github: Malam2704}} $|$
+    \href{https://moe-alam.com}{\underline{moe-alam.com}}
+    
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+     {Rochester Institute of Technology}{Rochester, NY}
+      {BS in Software Engineering, Minor in Economics. GPA: 3.63}{\textbf{Graduation May 2025}}
+    % \resumeSubheading
+    %   {Blinn College}{Bryan, TX}
+    %   {Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
+  \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript, TypeScript, Java, C\#, C++, SQL, HTML/CSS, PHP, GraphQL, Kotlin, Swift, Go } \\
+     \textbf{Frameworks}{: React, Next.js, Node.js, Flask, WordPress, Material-UI, FastAPI, Semantic Kernel, Flutter, Angular} \\
+     \textbf{Developer Tools}{: AWS, Databricks, Git, Docker, Database(MySQL, Postgres, MongoDB),  Terraform}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Rivian Automotive}{January 2024 -- August 2024}
+      {Software Engineer Co-Op \& Machine Learning Co-Op}{Normal, IL}
+      \resumeItemListStart
+       \resumeItem{\textbf{Saved \$100,000} by building a \textbf{3D CAD} modeling app with enhanced functionality to replace 3rd-party software}
+        \resumeItem{Unified the manufacturing process with an app that \textbf{cut load times by 97.4\%} (90 to \~1.5 minutes) and enabled live access to data, replacing expensive external software, built with \textbf{Typescript React, Node, AWS, \& C\#}}
+        \resumeItem{Automated process to compare part structures for next-gen vehicles (R2 car), eliminating the need to analyze 100+ Excel files \& use external software, using \textbf{ Python, Typescript React, MongoDB, and Redux}  }
+        \resumeItem{Enabled natural language search for non-technical teams on manufacturing data, by integrating in-house \textbf{LLM (Semantic Kernel)} with \textbf{Databricks, converting English to SQL}, and streamlining data access. }
+        \resumeItem{Expanded LLM usage, enabling teams to create tailored plugins to access external \textbf{APIs (e.g. Jira, SCADA)}}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Fidelity Investments}{June 2023 -- August 2023}
+      {Software Engineer Intern}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Designed \textbf{Wireframes} and Prototypes of a patented Securities Exchange platform with \textbf{Figma}}
+        \resumeItem{Launched a \textbf{Full Stack} Trading Platform, to exchange \textbf{Solidity crypto} tokens, with \textbf{Angular} and \textbf{Oracle SQL} }
+        \resumeItem{Founded an \textbf{NLP} Research Project, with a team of Interns to enhance company operations such as onboarding}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Amplify Education}{August 2022 -- December 2022}
+      {Software Engineer Co-Op}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Modernized 3 company projects, by updating old design components in \textbf{Figma}, and \textbf{integrating} such in \textbf{React}}
+        \resumeItem{Refactored \textbf{Flask} and \textbf{Express.js} APIs, reducing redundancy and response time for \textbf{Node.js} middleware by 25\%.}
+        % \resumeItem{Executed QA Testing with Jest \& Selenium in addition to infrastructure automation with CloudForge \& Terraform}
+        \resumeItem{Created a \textbf{CI/CD React} app to increase student grades by consulting teams of Data Scientists and UX Designers}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+    
+    \resumeSubheading
+      {Liberty Mutual Insurance}{May 2022 -- August 2022}
+      {Software Engineer Intern}{Indianapolis, IN}
+      \resumeItemListStart
+        \resumeItem{Developed a \textbf{REST API} for Uber, hosted on \textbf{AWS API Gateway}, reducing request load time by 35\%}
+        \resumeItem{Created \textbf{AWS Lambda} Functions for Uber to modify data stored in \textbf{AWS Aurora}, decreasing call time by 24\%}
+        \resumeItem{Launched an internal advice-sharing app, leading an \textbf{Agile} Intern Team as a Project Manager \& \textbf{UI/UX} Designer}
+        \resumeItem{Reduced Project setup time by 2 hours, by aiding development of an AWS \textbf{CDK Constructs Python} template}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {NYC Office of Technology \& Innovation}{June 2021 -- August 2021}
+      {Data Engineer Intern}{New York, NY}
+      \resumeItemListStart
+         \resumeItem{Sped up Data Retrieval by developing a \textbf{Java Spring Boot} REST API to aggregate 23 data sources into 1. }
+        \resumeItem{Designed a \textbf{Responsive Angular} app to view data, eliminating the need for users to analyze 100+ JSON files}
+        \resumeItem{Decreased request wait time for a Secure Document Transfer App’s REST API by 43\%}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+% -----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Music Soulmate} $|$ \emph{\textbf{Next.js, Spotify API, React, MongoDB, Node, Python (Spotipy)}}}{June 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Utilized Spotify API to analyze music taste, and give friend recommendations with a custom made algorithm}
+            \resumeItem{Constructed a full-stack music taste-matching app, applying the Spotify API, OAuth2,MongoDB , and React}
+          \resumeItemListEnd
+      % \resumeProjectHeading
+      %     {\textbf{Wisely} $|$ \emph{React, Java, Spring Boot, Maven, PostgreSQL, Git}}{May 2022 -- April 2023}
+      %     \resumeItemListStart
+      %       \resumeItem{Built an app to keep track of users' financial status, spending habits, and saving goals.}
+      %       \resumeItem{Implemented Responsive Design to make a CRUD app using ReactJS, Spring REST API, and PostgreSQL}
+      %       \resumeItem{Practiced System Design, by planning out a design document, UML Diagrams, and Sequence Diagrams}
+      %     \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+\section{Awards \& Leadership Experience}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Awards}{: 1st place at MLH/RIT Tiger Games Hackathon 2023 (Social Impact), 2nd place at RIT's Datafest Hackathon 2023 (External Data Category), 2nd place in Amplify Company-wide Hackathon (New Innovation Category)
+} \\
+    \textbf{Organizations}{: Codepath.org Coach (Advanced Software Engineering Class), Microsoft Tech Resilience Program (Mentee), Society of Software Engineers (Tech Lead), Computer Science House, Google Student Developers
+} \\
+    }}
+ \end{itemize}
+
+
+
+%-------------------------------------------
+\end{document}
